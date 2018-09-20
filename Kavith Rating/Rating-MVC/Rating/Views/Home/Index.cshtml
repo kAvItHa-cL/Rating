@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+    <title>Star Rating</title>
+    <link rel="stylesheet" href="~/Content/css/style.css">
+</head>
+<body>
+    <div class="leave-rating margin-bottom-30">
+        <input type="radio" name="rating" id="rating-5" value="1" />
+        <label for="rating-5" class="fa fa-star"></label>
+        <input type="radio" name="rating" id="rating-4" value="2" />
+        <label for="rating-4" class="fa fa-star"></label>
+        <input type="radio" name="rating" id="rating-3" value="3" />
+        <label for="rating-3" class="fa fa-star"></label>
+        <input type="radio" name="rating" id="rating-2" value="4" />
+        <label for="rating-2" class="fa fa-star"></label>
+        <input type="radio" name="rating" id="rating-1" value="5" />
+        <label for="rating-1" class="fa fa-star"></label>
+    </div>
+    <script type="text/javascript" src="~/Content/scripts/custom.js"></script>
+</body>
+</html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input[name='rating']").change(function () {
+            alert('value of checked radio: ' + $('input[name=rating]:checked').attr('id'));
+            // Do something interesting here
+        });
+    });
+</script>
+
